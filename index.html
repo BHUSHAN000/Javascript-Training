@@ -23,15 +23,54 @@
 h1{
   color: green
 }
+
+.inner{
+  background-color: brown;
+  position: sticky;
+  top: 0px;
+}
+
+.abc{
+  height:100px;
+  width: 100px;
+  border: 1px solid red;
+  background-color: yellow;
+}
 </style>
 </head> 
 <body>
 
-<h1  class="abc">Hello</h1>
+<!-- <h1  class="abc">Hello</h1>
 <form action="">
   <input type="text" name="name" id="abc" value="b">
 
-</form>
- <script type="module" src="a.js" defer ></script>
+</form> -->
+<script>
+  
+// const div = document.querySelector('.abc');
+
+// div.addEventListener('mouseenter', () =>{
+//   div.style.color= 'blue';
+// })
+
+// div.addEventListener('mouseout', () =>{
+//   div.style.color= 'black';
+// })
+
+
+ const mouseEnter = () => {
+   document.querySelector('.abc').style.color= 'blue';
+ }
+ 
+ const mouseOut = () => {
+  document.querySelector('.abc').style.color= 'black';
+ }
+</script>
+<div>
+  <div class="abc" onmouseenter="mouseEnter()" onmouseout="mouseOut()">
+    Hello
+  </div>
+</div>
+<script type="module" src="a.js" defer ></script>
 </body>
 </html>

@@ -1,3 +1,23 @@
+// const a= 'Bhushan pawar javascript'
+//  const b = a.split(' ');
+
+// console.log(b)
+
+// let c=new Array();
+
+//  b.forEach((word,i) => {
+//    if(i > 0 ){
+//     // console.log(word)
+//  		console.log(word.charAt(0).toUpperCase() + word.slice(1));
+//     c.push(word.charAt(0).toUpperCase() + word.slice(1));
+//  	} else {
+//     c.push(word)
+//   }
+//   // console.log(word,i)
+//  })
+
+//  console.log(c.join(' '))
+
 // let A=10;
 // var B='bhushan';
 // var c: number= 10.30;
@@ -25,7 +45,6 @@
 // let   => block scope => can change value
 // const => block scope => can't change value
 
-
 // function Disp(){
 //     var a;
 //     console.log("Value of a=",a);
@@ -45,7 +64,6 @@
 // }
 
 // Disp();
-
 
 // console.log(a);  // undefined
 // var a=10;
@@ -72,7 +90,6 @@
 
 // Disp1(10,29);
 
-
 // const bb =function Disp2(a, b) {    // function expression
 // console.log(a,b);
 // }
@@ -85,13 +102,12 @@
 
 // cc(10,29);
 
-
 // const dd = (a, b) => {   // arrow function / flat arrow function
 // console.log(a,b);
 // }
 
 // dd(10,29);
-    
+
 // let a=10,b=20;
 // console.log(a++ + ++b);
 // console.log(++b + a++);
@@ -108,11 +124,11 @@
 // console.log(e + f);
 
 // function A () {
-// 	a=100;
+// 	let a=100;
 // 	return function B(){
 //   	console.log(a);
 //   }
-  
+
 // }
 
 // const BB= A();
@@ -142,7 +158,6 @@
 //   }
 // }
 //   Outer(1)(2)(3)(4)();
-
 
 // console.log("===================================================================");
 
@@ -181,7 +196,6 @@
 // }
 // console.log(addition(1)(2)(3)(4)(5))
 
-
 // console.log("closure===============================");
 
 // let a=20;
@@ -203,14 +217,13 @@
 // var => function scope
 // let, const => block scope
 
-
 // const Outer =()=>{
 //   return function Inner() {
 //       return function Inner2(){
 //         console.log("hello");
 //       }
 //   }
-  
+
 // }
 
 // const AA = Outer();
@@ -218,7 +231,6 @@
 // const BB = AA();
 // console.log(BB);
 // BB();
-
 
 // function Outer(a) {
 //   return function Inner(b) {
@@ -228,14 +240,13 @@
 //   }
 // }
 
-
 // const AA = Outer(10)(20);
 // AA();
 
 // closure => accessing parent's properties / variables or function == definition: child function can access outer function's properties knows as closure i.e child can access its lexical scope's properties
 // function curring  => function_name()()()()()().....
-//it is way of function calling where istead of passing aal parameters to 1 function like f(a,b,b) we are passing it as f(a)(b)(c) or Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c). or Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument."
-// recursion of function 
+//it is way of function calling where istead of passing all parameters to 1 function like f(a,b,b) we are passing it as f(a)(b)(c) or Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c). or Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument."
+// recursion of function
 
 // function ABC();  // hoisting
 
@@ -245,14 +256,12 @@
 //   console.log('Hello');
 // };
 
-
 // Object: it is derived datatype , it is collection of various values or variables
 
 // objects have key-value pair
 
 // const name= `Bhushan`;
 // const lastname= 'pawar';
-
 
 // const detail = {
 //   address: 'Pune'
@@ -264,15 +273,10 @@
 
 // console.log(detail);
 
-
-
-
-
 //IIFE (Immediately Invoked function expression)
 
-
 // (
-  
+
 //   function (a,b) {
 //     let aa= 100;
 //     console.log('hello',a,b,aa);
@@ -281,7 +285,6 @@
 //     }
 //   }
 // )(12,30)();
-
 
 // typeof Operator
 // let a =10;
@@ -298,6 +301,8 @@
 // console.log(typeof objVar);
 // let arryVar = [10,20,40];
 // console.log(typeof arryVar);
+// let nanVar = NaN;
+// console.log(typeof nanVar);
 
 // let funcVar= function () {
 //   console.log('hello');
@@ -307,9 +312,7 @@
 // let a;
 // let b = null;
 
-
 // console.log(a,b)
-
 
 // Object creation second method using Object class/ Object constructor
 
@@ -319,31 +322,27 @@
 // a.lastname ='pawar';
 // a["p"]='pune';
 
-
 // const b = new Object({ name:'bhushan'});
-// console.log(a);
+// console.log(b);
 
 // delete a.p;
 // console.log(a);
 
-
 //Higher order function or first class function  => when a function takes another function as a argument or when a function returns another function from itselt then it is known as Higher order function or first class function
-
 
 // factory function => when a function returns an object then that function is known as Factory function.
 
 // const bb = () => {
 //   return {
 //     name: 'bhushan',
-//     pawar: 'pawar'
+//     lname: 'pawar'
 //   }
 // }
 
 // const a = bb();
 // console.log(a);
-// delete a.pawar;
+// delete a.lname;
 // console.log(a);
-
 
 // function Abc() {
 //   this.name= 'Bhushan';
@@ -378,7 +377,6 @@
 //   console.log(' present');
 // }
 
-
 //Method-2
 // if('name' in normalObj) {
 //   console.log('present', normalObj.name);
@@ -386,15 +384,12 @@
 //   console.log('not present')
 // }
 
-
 //Method-3
 // const result = normalObj.hasOwnProperty('pname');
 
 // console.log(result);
 
-
-
-// For-in loop for Object
+// For-in loop for Object=> i stands for key not index here
 // for( let i in normalObj) {
 //   if(typeof normalObj[i] === 'function' ) {
 //     console.log(i + " : " + normalObj[i]())
@@ -406,9 +401,8 @@
 // for( let i in normalObj) {
 
 //     console.log( i);
-  
-// }
 
+// }
 
 // const aa = Object.keys(normalObj);
 // console.log(aa);
@@ -419,39 +413,36 @@
 // const cc = Object.entries(normalObj);
 // console.log(cc);
 // for( let i in normalObj) {
-    
+
 //     console.log( normalObj[i]);
-  
+
 // }
 
+// const obj = {
+//   a: 10,
+//   b: {
+//     c: 30,
+//   },
+// };
 
-
-
-// const obj ={
-//     a: 10,
-//     b:{
-//         c: 30
-//     }
-//     }
-    
-//     Object.freeze(obj);
-//     obj.a=20;
+// // Object.freeze(obj); // => prevent changing anything i.e user stop adding new property in object as well as stop changing existing one too
+// // Object.seal(obj); // => prevent adding new property and delete but able to modify existing properties
+// obj.a = 20;
+// // obj.d =40;
+// delete obj.a;
 
 // console.log(obj);
-
-
-
 
 // }
 
 // const newObj = {}   // object literal
 // newObj.a = 20;
-// const newObj2 = new Object()    // Object using Object class/ Object constructor 
+// const newObj2 = new Object()    // Object using Object class/ Object constructor
 // newObj2.a=30;
-// const newObj3 = new Object()    // Object using Object class/ Object constructor 
+// const newObj3 = new Object()    // Object using Object class/ Object constructor
 // newObj3[a]=40;
 
-// function Abc () {               // Object using function which returns an object
+// function Abc () {               // Object using function which returns an object i.e factory function
 //     return {
 //         a: 50,
 //         b: function() {
@@ -464,23 +455,23 @@
 
 // const bba = Abc();
 
-// // OR 
-// // const Abc = () => {               // Object using function which returns an object using arrow function
-// //     return {
-// //         a: 50,
-// //         b: () => {
-// //             return {
-// //                 c: 60
-// //             }
-// //         }
-// //     }
-// // }
+// OR
+// const Abc = () => {               // Object using function which returns an object using arrow function
+//     return {
+//         a: 50,
+//         b: () => {
+//             return {
+//                 c: 60
+//             }
+//         }
+//     }
+// }
 
 // const bb = Abc();
 // const cc = bb.b();
 // console.log(cc.c);
 
-// function PQR() {                          // objection creation using construnctor
+// function PQR() {                          // object creation using construnctor
 //     this.a = 100;
 //     this.b = function () {
 //         return {
@@ -494,9 +485,9 @@
 // const cccc = new PQR();
 // console.log(aaa.a);
 
-// for in loop 
+// for in loop
 
-// for(Ini, condi, inc/dec) 
+// for(Ini, condi, inc/dec)
 
 // const obj = {
 //     a: 200,
@@ -510,7 +501,7 @@
 // console.log(obj.a);
 
 // ==================================================================
-// Class in javascript => ES5 
+// Class in javascript => ES5
 
 // const PQRS = function () {             // when constructor function stored in a variable (i.e it should be anonymous function )then it is called as class
 //     this.a = 100;
@@ -523,7 +514,6 @@
 
 // const aaaaa = new PQRS();
 // console.log(aaaaa.b())
-
 
 // =========================================================================
 
@@ -539,19 +529,17 @@
 // console.log(newObj.c());      // undefined
 
 // const result = Abc();          // accessing function annonymous function
-// // console.log(result);            // printing return value
-// // // console.log(result.a);
+// console.log(result);            // printing return value
+// console.log(result.a);
 
 // console.log(result)
 
 // =========================================================================
 
-
 //interview question
 
-// // const a = 1000;         // normal variable
-// // a =2000;
-
+// const a = 1000;         // normal variable
+// a =2000;
 
 // const aa = {            // reference variable
 //     a: 1000
@@ -562,7 +550,6 @@
 // aa = 2000000
 
 // console.log(aa.a);
-
 
 // =========================================================================
 
@@ -576,32 +563,32 @@
 //         }
 //     }
 //     show2(){
-//         return "Hello"+this.name;
+//         return "Hello "+this.name;
 //     }
+
 // }
 
 // const aa = new Mobile();
-
 // console.log(aa.show2());
 // console.log(aa);
 
-// console.log(Object.show2());
-
+// console.log(aa.__proto__.show2());
+// aa.__proto__.name='Rutul';
+// console.log(aa.__proto__.show2());
 
 // const fun= function () {
-//     this.aaa = 'hbushan'
+//     this.aaa = 'bhushan'
 // }
 
 // fun.prototype.lname ='pawar';
 // const sam = new fun();
+// console.log(sam)
 // console.log(sam.lname)
-
 
 // const Abc = function () {
 //     this.name = 'Bhushan';      //instance members
 //     this.lname = 'pawar';
 // }
-
 
 // const aa = new Abc();
 
@@ -613,6 +600,7 @@
 // for( let i in aa) {             // it always shows prototype members
 //     console.log(i)
 // }
+
 // const normal = 'Hello';
 // console.log(Object.getPrototypeOf(normal));
 
@@ -627,19 +615,16 @@
 // const newArr2 = new Array([10,20,30]);
 // console.log(Object.getPrototypeOf(newArr2));
 
-
 // console.log(aa);
 // console.log(aa.address);
 // console.log(bb.address);
 
-
-// const newObj = new Object({ 
-//     name: 'Bhushan', 
-//     lname: 'pawar', 
+// const newObj = new Object({
+//     name: 'Bhushan',
+//     lname: 'pawar',
 // })
 
 // console.log(newObj);
-
 
 // const newobj2 = {};
 // newobj2.name ='Bhushan';
@@ -647,15 +632,13 @@
 
 // console.log(newobj2);
 
-
 // const aa = {
-//     name: 'Bhusan',
+//     name: 'Bhushan',
 //     address: function () {
 //         console.log('first')
 //     }
 // }
 // console.log(aa)
-
 
 // function Mobile() {
 //     this.name = 'bhushan'
@@ -673,7 +656,7 @@
 //         this.name='Bhushan'
 //     }
 //     disp1() {
-//         console.log(this.name);
+//         console.log('in Mobile 1 -' + this.name);
 //     }
 // }
 
@@ -698,16 +681,16 @@
 
 //interview Qustions
 
-//1) difference between let , const, var 
+//1) difference between let , const, var
 //2) what is hoisting
 // var c ;                 // declaration of variable
-// console.log(c); 
+// console.log(c);
 // var c = 10;             // initialization of variable
 //3) can function we hoist? if yes then how and if no then why no?
 //4) what is closure?     => when inner function have a access of lexical scope of parent one then it is known as Closure
 //5) what is function currying and write a code for it.
 //6) what is higher order function or first class function?
-//7) types of functions ? normal,function expression, annonymous,flat arrow or arrow function 
+//7) types of functions ? normal,function expression, annonymous,flat arrow or arrow function
 //8) what is the use of typeof keyword?
 //9) what are the ways to create an object?
 //10) what is factory function ?
@@ -717,9 +700,7 @@
 //14) What is IIFE?
 //15) What is TDZ( i.e temporal dead zone) => A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the computer completely initializes it with a value.
 
-
 //Prototype
-
 
 // const Abc = function () {       // class in Javascript => ES5
 //     this.name = 'Bhushan'       // instance member
@@ -736,8 +717,6 @@
 // Array.prototype.add= 'pune';
 // console.log(newArr.__proto__);
 // console.log(Array.prototype);
-
-
 
 // ES6 new features => let, const , flat arrow function, class , spread operator, rest parameter, arguments objects
 
@@ -764,7 +743,6 @@
 // const pp = new Pqr(10);
 // console.log(pp);
 
-
 // when we passed any value to constructor then it is knowns as parametrised constructor
 //and when we are not passing anything to constructor then it is known as default constructor
 
@@ -789,7 +767,6 @@
 // console.log(a);                 // variable hoisting
 // let a ='Bhushan'
 // console.log(a);
-
 
 // Array other langs => collection of homogenous data elements in a single unit/variable , int a = [10,20,30] , float b= [10.20,20.30,40.2] , char c= ['a','b','c']
 // Array in Javascript => collection of homogenous as well as heterogenous data elements in a single unit/variable
@@ -820,25 +797,19 @@
 
 // //['harsh',function,,,,,,,,,100]
 
-
-
 // let harsh2 = [,,,,];
 // console.log(harsh2.length);
 
-
 //2) Using Array constructor
 
-
 // let harsh3 = new Array(['A','B']);
-// // harsh3[0] = 'harsh';
-// // harsh3.address = true;    //
-// // harsh3["lname"] = 'Rutul';
-// // harsh3[1] = function () { console.log('Hello');}
-// // harsh3[10] = 100;
+// harsh3[0] = 'harsh';
+// harsh3.address = true;    //
+// harsh3["lname"] = 'Rutul';
+// harsh3[1] = function () { console.log('Hello');}
+// harsh3[10] = 100;
 
 // console.log(harsh3);
-
-
 
 // let harsh4 = new Array([10,20],[30,40],[50,60]);
 // //[,,,,,,,,,,]
@@ -851,17 +822,25 @@
 //===========================================================
 // spread operator
 
-// let harsh1 = ['ABC', 12,232,'rutul'];
+let harsh1 = ["ABC", 12, 232, "rutul"];
 
 // console.log(harsh1);
 
-// let harsh2 = harsh1;    
+// let harsh2 = harsh1;
 // copying by address or pass by reference
-//let harsh2 = new Array(harsh1); // invalid way
-// let harsh2 = new Array(...harsh1); // valid way
-// //OR
-// let harsh3 = [...harsh1]       // pass by value
+// let harsh2 = new Array(harsh1); // invalid way
+// let harsh3 = new Array(...harsh1); // valid way
+// console.log(harsh2)
+// console.log(harsh3)
+// harsh1[2]=100;
+// console.log(harsh1)
+// console.log(harsh3)
 
+// //OR
+// let harsh4 = [...harsh1]       // pass by value
+// harsh1[2]=100;
+// console.log(harsh1)
+// console.log(harsh4)
 // // console.log(harsh2);
 
 // harsh2[0] = 'bhushan';
@@ -869,7 +848,6 @@
 // console.log(harsh1);
 // console.log(harsh2);
 // console.log(harsh3);
-
 
 // let harsh4=[];
 
@@ -918,12 +896,10 @@
 //     console.log(j);
 // }
 
-
 //============================================
 
-
 // delete value from array
-// Callback function 
+// Callback function
 // forEach loop
 
 // let aa= [10,20,30,40];
@@ -938,27 +914,30 @@
 
 // console.log(aa);
 
-// ====================================================================
+// const data = {
+//   name:'bhushan',
+//   lname: 'pawar'
+// }
 
+// delete data.lname;
+// console.log(data.lname)
+// console.log(data)
+
+// ====================================================================
 
 // "2"+5+8             => 258, 2 13
 // "2"+"5"+"8"         => 258
 // 2+5+"8"             => 78
-// "2"-5-"8"           => error, 2-5-8
+// "2"-5-"8"           => -11
 // "hi"-"bye"          => error
-
-
 
 // console.log("2"+5+8+'hello',"2"+"5"+"8",2+5+"8"+9,"2"-5-"8","hi"-"10");
 
-
 // console.log('0'+2+3+5+6+'7'+'8'+1);
-
-
 
 //============================================================
 
-// ES6 features => 
+// ES6 features =>
 //1.let and const Keywords
 //2.Arrow Functions
 //3.Multi-line Strings
@@ -976,7 +955,6 @@
 
 // Higher order function or first class function
 
-
 // function Abc(pqr) {
 //     console.log('first')
 //     pqr();
@@ -986,23 +964,18 @@
 //     console.log('Second');
 // }
 
-
-// Abc(temp);      // fuction argument  // HOF
-
+// Abc(temp);      // function argument  // HOF
 
 //callback function = whenever we are passing any function as an argument to another function then that argumented function is also known as callback function.
 // window.setTimeout(() => { console.log('In settimeout')},5000);
-
 
 // function Disp() {
 //     const todayDate = new Date();
 //     document.write(todayDate);
 // }
 
-
 // // window.setTimeout(Disp,1000);        // called only once
 // window.setInterval(Disp,1000);          // continue call after given miliseconds
-
 
 // =========================================================
 
@@ -1014,8 +987,6 @@
 // newArr.forEach((data,ind,a) => {
 //     console.log(data,ind,a);
 // })
-
-
 
 // //OR
 
@@ -1034,13 +1005,11 @@
 
 // 8  9  3
 
-
 // const arr = [[1,3,4],[2,6,7],[8,9,3]]
 
 // let harsh4 = new Array([10,20],[30,40],[50,60]);
 
 // console.log(harsh4[0][0]);
-
 
 // for(let i =0; i<3;i++) {
 
@@ -1050,8 +1019,6 @@
 //     }
 
 // }
-
-
 
 // Array methods
 
@@ -1088,13 +1055,13 @@
 // console.log(newArr);
 //===================================================================
 
-//4) slice() => it returns a new slice array => extracted array
+//4) slice() => it returns a new slice array => extracted array but dont change original array
 
 // const newArr = [10,20,30,40,50,60,70,80,90];
 
 // const bb = newArr.slice(2,5);  // start = inclusive       //end = exclusive
 // console.log(bb);
-
+// console.log(newArr)
 // const cc = newArr.slice(0,6);
 // console.log(cc);
 
@@ -1148,11 +1115,11 @@
 // console.log(Array.isArray(bb));
 
 //===================================================================
-//7) splice() => it returns a existing array => add element/ delete element from an existing array
+//7) splice() => it returns deleted elements and changing existing array i.e add element/ delete element from an existing array
 
 // const newArr = [10,20,30,40,10,50,60];
-// const aa = newArr.splice(2,2)      // first parameter for start position adding or deleting element , second parameter number of elements to be deleted
-// console.log(aa);    
+// const aa = newArr.splice(2,2,90,80,70)      // first parameter for start position adding or deleting element , second parameter number of elements to be deleted
+// console.log(aa);
 // console.log(newArr);
 
 // const bb = newArr.splice(2,0,50,60,70,90);
@@ -1174,7 +1141,6 @@
 // console.log(newArr.indexOf(10));
 // console.log(newArr.indexOf(10,3));   // first parameter shows element tobe search and second shows start position for searching
 
-
 // console.log(newArr.indexOf(90)); // -1 means element not present in array
 
 //=======================================================================
@@ -1191,7 +1157,7 @@
 
 // const newArr = [10,20,30,40];
 
-// console.log(newArr.fill(90));  // fills first parameter to end
+// console.log(newArr.fill(90));  // fills from first parameter to end
 // console.log(newArr.fill(90,2)); // fills from second position to end
 // console.log(newArr.fill(90,1,3)); // fills from 1st position to 2nd position as start is inclusive and end is exclusive
 
@@ -1245,7 +1211,6 @@
 
 //====================================================================
 
-
 // const a = -10/0;
 // console.log(Boolean(' '))
 
@@ -1265,10 +1230,13 @@
 //     }
 // })
 
+//OR
+
+// const result = newArr2.find((data) => data > 90)
+
 // console.log(result);
 
-
-//OR 
+//OR
 
 // function checkCondition(data) {
 //     if(data > 50) {
@@ -1285,14 +1253,9 @@
 //on successfull => returns an index
 //on unsuccessfull => returns -1
 
-
 // const newArr = [10,20,30,40,50,60];
 
-// const aaa = newArr.findIndex((data) => {
-//     if(data >50) {
-//         return data;
-//     }
-// });
+// const aaa = newArr.findIndex((data) => data > 50);
 
 // console.log(aaa);
 //====================================================================
@@ -1301,29 +1264,23 @@
 
 // const newArr = [10,20,30,40,50,60,80];
 
-// const result = newArr.filter((value) => {
-//     if(value > 40) {
-//         return value;
-//     }
-// });
+// const result = newArr.filter((value) => value > 40);
 
 // console.log(result);
 //====================================================================
 
-//18) map() => it returns the new array from existing after performing operation on array elements 
+//18) map() => it returns the new array from existing after performing operation on array elements
 
 // const newArr2 = [10,20,30,40,50,60,80];
 
-// const result2 = newArr2.map((value2) => {
-//     return value2 * 4;
-// });
+// const result2 = newArr2.map((value2) => value2 * 4);
 
 // console.log(result2);
 //====================================================================
 
 //19) some => return true or false (i.e boolean)
 // if condition gets satisfied for atleast one element from an array then returns true
-//  if condition not gets satisfied for atleast one element from an array then returns false
+// if condition not gets satisfied for atleast one element from an array then returns false
 
 // const newArr = [10,20,30,40,50,60,80];
 
@@ -1341,7 +1298,6 @@
 // console.log(newArr2.every((data) => { if(data < 80) { return data}}));
 // console.log(newArr2.every((data) => { if(data < 100) { return data}}));
 
-
 //====================================================================
 
 //21) from() => it returns an array from given input
@@ -1358,9 +1314,9 @@
 
 //22) copyWithin() => it copies the element in an existing array from existing elements, it doesn't change its length
 
-// const newArr= [10,20,30,40,50,60,70,80,90];
+// const newArr= [10,20,30,40,50,60,70,80,90,100,110,120,130,140];
 
-// const data = newArr.copyWithin(2,5,8);
+// const data = newArr.copyWithin(2,8,11);
 // console.log(data);
 
 //====================================================================
@@ -1423,11 +1379,9 @@
 
 //26) flat() => it returns flattern array
 
-
 // const newArr = [10,20,30, ,40,[50,60,70],[80,90,100]];
 
 // console.log(newArr.flat());
-
 
 // const newArr2 = [10,20,30, ,40,[50,60,[1,2,[7,8,9,[10,11,12,[13,14,15]]],3],70],[80,90,100]];
 
@@ -1436,7 +1390,7 @@
 
 //====================================================================
 
-//27) flatMap() => execute operation on every element and return new flattern array 
+//27) flatMap() => execute operation on every element and return new flattern array
 
 // const newArr= ['This is','javascript','programming classes'];
 
@@ -1464,9 +1418,10 @@
 
 // const newArr = [1,2,3,4,5,6,7];
 
-// const res = newArr.reduce((prevres, currentVal) => { 
-//         console.log(prevres, currentVal)
-// ;    return prevres + currentVal});
+// const res = newArr.reduce((prevres, currentVal) => {
+//         console.log(prevres, currentVal);
+//         return prevres + currentVal
+// },10);
 // console.log(res);
 
 //====================================================================
@@ -1475,7 +1430,7 @@
 
 // const newArr = [1,2,3,4,5,6,7];
 
-// const res = newArr.reduceRight((prevres, currentVal) => { 
+// const res = newArr.reduceRight((prevres, currentVal) => {
 //         console.log(prevres, currentVal)
 // ;    return prevres + currentVal});
 // console.log(res);
@@ -1492,8 +1447,6 @@
 
 // console.log(newArr.sort((a,b) => a-b)); //ascending
 // console.log(newArr.sort((a,b) => b-a)); //descending
-
-
 
 //====================================================================
 
@@ -1513,7 +1466,6 @@
 //     console.log('false')
 // }
 
-
 //ternary operator
 //!!a ? console.log('true') : console.log('false');
 
@@ -1522,7 +1474,7 @@
 //Interview Questions
 
 //1) what is the difference between async and defer ?
-//2) difference between noopener and noreferrer and nofollow attribute in anchor tag? 
+//2) difference between noopener and noreferrer and nofollow attribute in anchor tag?
 //3) Can a web page contain multiple <header> elements and <footer> elements?
 //4) difference between <header> and h1 tags
 //5) How to bring div to horizontally and vertically center of page?
@@ -1543,19 +1495,14 @@
 //20) What is viewport , viewport height , viewport width?
 //21) what is data-list in HTML ?
 
-
-
-
-
 //================================================================
 
-// string 
+// string
 /* const newstring = `bhushan`;
 
 
 console.log(`Hello ${newstring}`)
  */
-
 
 /* function disp(a,...b){
     console.log("static parameters",a);
@@ -1564,7 +1511,7 @@ console.log(`Hello ${newstring}`)
 
 disp("bhushan",'pawar','rutul'); */
 
-//string interpolation 
+//string interpolation
 /* const aa= 'bhushan';
 
 console.log(`hello ${aa}`); */
@@ -1583,9 +1530,7 @@ function disp(a,...b){
 }
 console.log(disp`Hello ${var1} ${var2} ${var3}`); */
 
-
 //============================================================
-
 
 // String Methods
 
@@ -1603,8 +1548,8 @@ console.log(newstring.charAt(2)); */
 
 //3) charCodeAt() or codePointAt() => returns ASCII code of an character
 
-/* const aa = 'ABCDz AABBCC';
-console.log(aa.charCodeAt(4)) */
+//  const aa = 'ABCDz AABBCC';
+/* console.log(aa.charCodeAt(4)) */
 /* console.log(aa.codePointAt(2)); */
 
 //A =65
@@ -1622,11 +1567,10 @@ console.log(aa.toLowerCase()); */
 //5) trim() =>  it removed blank spaces from beginning and ending side of string
 // it only replaces first occurance of string
 
-
 /* console.log('      bhushan     p'.trim()); */
 //============================================================
 
-//6) replace() => it replaces specific letter or string
+//6) replace() => it replaces specific letter or string i.e it replaces only first occurance in a string
 
 /* console.log(aa.replace('AB','WW')); */
 
@@ -1663,16 +1607,16 @@ console.log(aa.indexOf('a'))
 
 /* console.log(aa.slice(1,4)); */
 
-
 //============================================================
 
-//11) substring() => it is similar to slice method but it won't allow negative index 
+//11) substring() => it is similar to slice method but it won't allow negative index
 
-/* console.log(aa.substring(0,-2)); */
+// const aa = 'bhushan is a java class is';
+// console.log(aa.substring(0,2));   //bh
+// console.log(aa.substring(0,-2));  // blank string
 //============================================================
 
-
-//12) substr() => it takes 2 parameters 
+//12) substr() => it takes 2 parameters
 // 1. startindex
 // 2. number of character
 
@@ -1684,7 +1628,6 @@ console.log(aa.indexOf('a'))
 console.log(String.fromCharCode(92));
 console.log(String.fromCodePoint(65)); */
 //============================================================
-
 
 // Practise
 
@@ -1710,10 +1653,10 @@ console.log(String.fromCodePoint(65)); */
 // Falsy values => 0, +0, -0, "", false, undefined , null
 // if("Hello") {
 //     console.log('True value');
-    
+
 // } else {
 //     console.log('False value');
-    
+
 // }
 
 // 'Hello' ? console.log('True value'): console.log('False value')
@@ -1726,6 +1669,9 @@ console.log(String.fromCodePoint(65)); */
 // console.log(10 && 20);
 // console.log('a' & 'b');
 // console.log(NaN & NaN);
+// let a =2
+// console.log(a &&= 5) // it assignes new value to a only if a is trythy
+// console.log(a ||= 5) // it assignes new value to a only if a is falsy
 
 //============================================================
 
@@ -1736,16 +1682,17 @@ console.log(String.fromCodePoint(65)); */
 //     }
 // }
 
-
 // let realobj1 = Object.assign({}, dummyObj);
 // let realobj2 = Object.assign(dummyObj);
+// // console.log(realobj1)
+// // console.log(realobj2)
 
 // let realobj = Object.create(dummyObj);
+// console.log(realobj)
 // realobj.price = 30000;
 // realobj.get_price= function() {
 //     return this.price;
 // }
-
 
 // delete realobj.price;
 
@@ -1755,6 +1702,10 @@ console.log(String.fromCodePoint(65)); */
 // console.log(realobj2);
 // console.log(realobj2.get_price());
 
+// let realobj = Object.create(dummyObj);
+// console.log(realobj)
+// realobj.price= 10000;
+// console.log(realobj.price)
 //============================================================
 
 // let a ={
@@ -1771,23 +1722,20 @@ console.log(String.fromCodePoint(65)); */
 // console.log(bb);
 //============================================================
 
-
 // let cc = {...a,...c};
 // delete cc.name;
 // console.log(cc);
 
-
 // let dd  = new Object(a);
 // console.log(dd);
 
-
 // var sum =0;
-// for(i=4; i<8 ; ++i) {
+// for(let i=4; i<8 ; ++i) {
 //     if(i === 6) {
 //         continue;
 //     }
 //     console.log('i = ',i);
-    
+
 //     sum+=1;
 // }
 
@@ -1803,10 +1751,9 @@ console.log(String.fromCodePoint(65)); */
 //     var len =20;
 //     console.log(this.len);
 //     console.log(len);
-    
+
 // }
 // fn();
-
 
 // let a ='10'
 
@@ -1814,24 +1761,21 @@ console.log(String.fromCodePoint(65)); */
 
 // console.log(b);
 
-
 // let aa ='rutul'
 
 // let bb = +aa;
 
 // console.log(bb);
 
-
 // console.log(Array.prototype);
 
+// var bar = 1,
+//   foo = {};
 
-
-// var bar  =1, foo ={}
-
-// foo= {
-//     bar: 2,
-//     baz: ++bar
-// }
+// foo = {
+//   bar: 2,
+//   baz: ++bar,
+// };
 
 // console.log(foo.baz);
 // console.log(foo.bar);
@@ -1857,15 +1801,19 @@ console.log(String.fromCodePoint(65)); */
 
 // finding unique values from an array
 
-// const givenArry = [10,20,30,10,30,20,40,50];
+const givenArry = [10, 20, 30, 10, 30, 20, 40, 50];
 
 // const newArry = givenArry.filter((data,index) => {
 //     console.log(data,givenArry.indexOf(data),index);
-    
+
 //     return givenArry.indexOf(data) === index;
 // })
 
 // console.log(newArry);
+
+//OR
+
+// console.log([...new Set([...givenArry])])
 
 //============================================================
 
@@ -1875,17 +1823,14 @@ console.log(String.fromCodePoint(65)); */
 //     console.log(data.split(" "));
 // })
 
-
 // for(let data of aa){
-//     newArr.push(data.split(" "));
+//   newArr.push(data.split(" "));
 
 // }
+// console.table(newArr)
 // console.log(newArr.flat(Infinity));
 
 //============================================================
-
-
-
 
 // windows.alert("Hello");
 // alert("Hello");
@@ -1903,10 +1848,10 @@ console.log(String.fromCodePoint(65)); */
 
 // if( a===b ) {
 //     console.log('True');
-    
+
 // } else {
 //     console.log('false');
-    
+
 // }
 
 //============================================================
@@ -1919,11 +1864,10 @@ console.log(String.fromCodePoint(65)); */
 // console.log(aa.toString(2)+'Hello');
 // console.log(aa.toString(10)+10);
 
+//============================================================
 
-// //============================================================
-
-// //2) toExponetial => it returns the number into exponential form
-// // fractionDigits decides how may decimal point to be shown
+//2) toExponetial => it returns the number into exponential form
+// fractionDigits decides how may decimal point to be shown
 // console.log(aa.toExponential());
 // console.log(aa.toExponential(3));
 // console.log(aa.toExponential(1));
@@ -1934,12 +1878,10 @@ console.log(String.fromCodePoint(65)); */
 //3) tofix() => it return a number with specific length or number of digits after decimal
 // const aa = 41.23456;
 
-
 // console.log(aa.toFixed(3));
 // console.log(aa.toFixed());
 // console.log(aa.toFixed(4));
 // console.log(aa.toFixed(9));
-
 
 //============================================================
 
@@ -1947,12 +1889,10 @@ console.log(String.fromCodePoint(65)); */
 
 // const aa = 41.23456;
 
-
 // console.log(aa.toPrecision(3));
 // console.log(aa.toPrecision());
 // console.log(aa.toPrecision(4));
 // console.log(aa.toPrecision(9));
-
 
 //============================================================
 
@@ -1970,7 +1910,6 @@ console.log(String.fromCodePoint(65)); */
 
 //6) Global methods - Number()
 
-
 // console.log(Number('hello'));
 // console.log(Number('1234'));
 // console.log(Number('1234.345'));
@@ -1983,7 +1922,6 @@ console.log(String.fromCodePoint(65)); */
 // console.log(Number(""));
 // console.log(Number(" "));
 // console.log(Number(-1));
-
 
 //============================================================
 
@@ -2003,8 +1941,6 @@ console.log(String.fromCodePoint(65)); */
 // console.log(parseInt(false));
 // console.log(parseInt(-1));
 
-
-
 // console.log('==============================================');
 
 // console.log(parseFloat('100'));
@@ -2019,13 +1955,9 @@ console.log(String.fromCodePoint(65)); */
 // console.log(parseFloat(false));
 // console.log(parseFloat(-1));
 
-
-
 //============================================================
 
-
 // Math methods
-
 
 // console.log(Math.sqrt(-64));
 // console.log(Math.abs(-64));
@@ -2042,22 +1974,20 @@ console.log(String.fromCodePoint(65)); */
 
 // console.log(Math.random()); // it returns random value lies between 0 to 1
 
-// // const aa = Math.random() * 6 +1;
-// // console.log(Number.parseInt(aa));
+// const aa = Math.random() * 6 +1;
+// console.log(Number.parseInt(aa));
 // const aa = Math.random() * 10000;
-// // console.log();
+// console.log();
 // const bb = Number.parseInt(aa);
 // bb> 999 && bb!== 0 && console.log(Number.parseInt(aa));
 
-
 //============================================================
-//Date : 
+//Date :
 
 //today's date
 
 // const newDate = new Date();
 // console.log(newDate);
-
 
 // const newDate2= new Date(2021,11,11,11,22,33,2);
 // console.log(newDate2);
@@ -2067,9 +1997,7 @@ console.log(String.fromCodePoint(65)); */
 // const newDate4= new Date(1000);     // single parameter act as a miliseconds
 // console.log(newDate4);
 
-
-
-// console.log(newDate.getFullYear()); 
+// console.log(newDate.getFullYear());
 // console.log(newDate.getMonth()+ 1);// starts from zero
 // console.log(newDate.getDay()+ 1);// starts from zero
 // console.log(newDate.getDate());
@@ -2082,7 +2010,6 @@ console.log(String.fromCodePoint(65)); */
 // console.log(`${newDate.getMonth()+ 1}:${newDate.getDate()}:${newDate.getFullYear()}`);
 
 //============================================================
-
 
 // const data1 = [
 //     {
@@ -2124,8 +2051,6 @@ console.log(String.fromCodePoint(65)); */
 //       imageUrl: "/_layouts/15/images/si/header/company_color.png"
 //     },
 //   ];
-  
-
 
 //   const data3 = data1.filter(item1 => !data2.find(item2 => item1.key == item2.key));
 //   console.log(data3);
@@ -2140,19 +2065,18 @@ console.log(String.fromCodePoint(65)); */
 // const result2 = newArr.filter((data,index) => newArr.indexOf(data) !== index );
 // console.log(result2);
 
-
 //==============================================================
 
-
 // const newArray = [1,2,3,4,5,6,7,8,10,12];
-
+// // console.log(newArray.length-1)
 // function disp(newArr) {
 //     let res =[];
 //     for(let i= 0; i< newArr.length-1 ; i++) {
+//       console.log(newArr[i] + 1 , newArr[i+1])
 //         if(newArr[i] + 1 != newArr[i+1]) {
 //             res.push(newArr[i] +1);
 //         }
-//     }  
+//     }
 //     return res;
 // }
 // console.log(disp(newArray));
@@ -2166,20 +2090,19 @@ console.log(String.fromCodePoint(65)); */
 //     if(newArray[index+1]-newArray[index]>1) {
 //         return data + 1;
 //     }
-    
+
 // })
+// console.log(arr1)
 // console.log(arr1.filter(data => data));
-
-
 
 //=================================================================
 
 // find the largest and smallest number from an unsorted Array
 // const newArray = [11,2,3,41,5,6,71,8,110,12];
 
-// //steps 1= sort array
-// //steps 2 = 0th element => smallest
-// //steps 3 = lenth-1 location => largest
+//steps 1= sort array
+//steps 2 = 0th element => smallest
+//steps 3 = lenth-1 location => largest
 
 // const newSortedArr = newArray.sort((a,b) => a-b );
 // console.log(newSortedArr);
@@ -2234,17 +2157,15 @@ we can only pass one object as a parameter maximum or blank object we can pass i
 // const bb = Object.assign({a: 'bhushan'});
 // console.log(bb);
 
-
 //=========================================================================================================
-
 
 // find the occurance of character in a string
 
 // let countingOccurance = str => {
 //     return str.split('').reduce((total, letter) => {
-//         console.log(total,letter,total[letter]);      
+//         console.log(total,letter,total[letter]);
 //         total[letter] ? total[letter]++ : total[letter] = 1;
-//         // console.log(total);      
+//         // console.log(total);
 //         return total;
 //     }, {});
 // };
@@ -2278,30 +2199,25 @@ console.log(ee);
 
 //===============================================================================
 
-
 // Program for testing given number is prime or not?
 //Answer:
 
-/* function test_prime(n)
-{
-  if (n===1){
-    return false;
-  }
-  else if(n === 2){
-    return true;
-  } else {
-    for(let x = 2; x < n; x++)
-    {
-      if(n % x === 0){
-        return false;
-      }
-    }
-    return true;  
-  }
-}
+// function test_prime(n)
+// {
+//   if (n===1){
+//     return false;
+//   }else {
+//     for(let x = 2; x < n; x++)
+//     {
+//       if(n % x === 0){
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+// }
 
-console.log(test_prime(25));
- */
+// console.log(test_prime(2));
 
 //============================================================================
 
@@ -2315,23 +2231,25 @@ console.log(test_prime(25));
 // }
 // console.log(findOdd(aa));
 
-
 //============================================================================
 
 // how to get only elements from any array
 
 // Question : input = [1,,,3,56,,,,33] , output=  [1, 3, 56, 33]
 
-// Answer: 
+// Answer:
 
 // const a =[1,,,3,56,,,,33];
 // console.log(a.flatMap((data) => data));
 
+//OR
+
+// console.log(a.filter((data) => data));
+
 //============================================================================
 
-
 // Question : Write a program to reverse a given integer number
-// Answer: 
+// Answer:
 /* const newNumber = 1234567;
 const newString = newNumber.toString();
 
@@ -2364,7 +2282,6 @@ console.log(reverseInt(12345678)); */
 
 // Symbol  => is a datatype which holds unique value
 
-
 // const newSym1 = Symbol('rutul');
 // const newSym2 = Symbol('bhushan');
 
@@ -2388,18 +2305,19 @@ console.log(reverseInt(12345678)); */
 // console.log(newObj);
 
 // for(let aaa in newObj) {
-//     console.log(aaa,newObj[aaa]);  
+//     console.log(aaa,newObj[aaa]);
 // }
 
 // console.log(Object.getOwnPropertySymbols(newObj))
 // newObj[aa] = 56789;
+// console.log(newObj);
+
 // console.log(newObj[aa]);
 
 // const newObj2 = Object.assign(newObj);
 // console.log(newObj2);
 
-
-// const newObj3 = {...newObj};  
+// const newObj3 = {...newObj};
 // console.log(newObj3);
 
 // const newObj4 = Object.create(newObj);  // creates new object but original key values will be act as prototype members
@@ -2413,9 +2331,7 @@ console.log(reverseInt(12345678)); */
 // newObj.address = 'Dhule'
 // console.log(newObj);
 
-
 //============================================================================
-
 
 // Set data structure in javascript ==> it is a data structure which hold unique values.
 // i.e repeatative values will be taken only once
@@ -2443,9 +2359,8 @@ console.log(reverseInt(12345678)); */
 //============================================================================
 
 //Map data structure in Javascript  => it is a collection of key value pair
-// main difference between Map and Object is in Object we having key as string or symbol but in 
+// main difference between Map and Object is in Object we having key as string or symbol but in
 // map we can take a keys of any type
-
 
 // const newMapvar = new Map();
 // const aa = [1,2,40];
@@ -2475,7 +2390,6 @@ console.log(reverseInt(12345678)); */
 // console.log(newMapvar);
 // console.log(newMapvar.size);
 
-
 //============================================================================
 
 // Number to string conversion
@@ -2483,13 +2397,12 @@ console.log(reverseInt(12345678)); */
 // console.log((12345).toString());
 // console.log(12345..toString());
 
-// // String to number
+// String to number
 
 // const aa = '123456789';
 
 // console.log(typeof parseInt(aa));
 // console.log(typeof Number(aa));
-
 
 //============================================================================
 
@@ -2498,7 +2411,7 @@ console.log(reverseInt(12345678)); */
 // const bb = null;
 
 // console.log(aa ?? 'hello'); // if aa is not undefined or null then it prints that value
-// console.log(bb ?? 'hello'); // if aa is not undefined or null then it prints that 'Hello'
+// console.log(bb ?? 'hello'); // if bb is undefined or null then it prints that 'Hello'
 
 // aa !== null || a!== undefined ? aa : 'Hello' ;
 
@@ -2510,7 +2423,6 @@ console.log(reverseInt(12345678)); */
 // console.log(Symbol('id') ?? 'hello'); //Symbol('id')
 
 //============================================================================
-
 
 // how to access inner objects from outside of object
 
@@ -2533,12 +2445,12 @@ console.log(reverseInt(12345678)); */
 // ES6 features => let , const, arrow function , annonymous function
 // Array methods => filter, map, includes, every, some, find, reduce, join, isArray
 // String methods => split, splice, slice, toString,
-// Number methods => Number(), parseInt , isNaN, 
+// Number methods => Number(), parseInt , isNaN,
 
 // Nullish coalescing operator
 // inner object checking
 
-// string interpolation => `${}`
+// string interpolation => `${}`   OR template literal
 
 // Object methods => keys, values, entries, freeze, seal, assign
 
@@ -2546,14 +2458,12 @@ console.log(reverseInt(12345678)); */
 
 // promises, async-await
 
-// localstorage, session storage,cookies 
+// localstorage, session storage,cookies
 
 //===============================================================================================================
 
-
-// Callback hell or pyramid of doom 
+// Callback hell or pyramid of doom
 // inversion of control
-
 
 /* function waitForThreeSeconds ( ) {
   let ms = 3000+ new Date().getTime();
@@ -2575,45 +2485,44 @@ disp2()
  */
 
 //=====================================================
-/* 
 
-function disp1(callback) {
-  setTimeout(() => {
-    console.log('Hello from disp1');
-    callback();
-  },500);
-}
+// function disp1(callback) {
+//   setTimeout(() => {
+//     console.log('Hello from disp1');
+//     callback();
+//   },500);
+// }
 
-function disp2(callback2) {
-  setTimeout(() => {
-    console.log('Hello from disp2');
-    callback2();
-  },1000);
-}
+// function disp2(callback2) {
+//   setTimeout(() => {
+//     console.log('Hello from disp2');
+//     callback2();
+//   },1000);
+// }
 
-function disp3(callback3) {
-  setTimeout(() => {
-    console.log('Hello from disp3');
-    callback3();
-  },1000);
-}
-function disp4() {
-  setTimeout(() => {
-    console.log('Hello from disp4');
-  },1000);
-}
+// function disp3(callback3) {
+//   setTimeout(() => {
+//     console.log('Hello from disp3');
+//     callback3();
+//   },1000);
+// }
+// function disp4() {
+//   setTimeout(() => {
+//     console.log('Hello from disp4');
+//   },1000);
+// }
 
-disp1(function () {
-  disp2(function () {
-    disp3(function() {
-      disp4();
-    });
-  });
-}) */
+// disp1(function () {
+//   disp2(function () {
+//     disp3(function() {
+//       disp4();
+//     });
+//   });
+// })
 
 //====================================================
 
-// Promises 
+// Promises
 /* function disp1() {
   return new Promise((resolve,reject) => {
     setTimeout(() => {
@@ -2651,15 +2560,11 @@ function disp4() {
 
 
 
-disp1().then((res) => {
-  console.log(res);
-  disp2();
-}).then(disp3).then(disp4); */
-
+disp1().then(disp2).then(disp3).then(disp4); */
 
 //======================================================
 
-// async-await 
+// async-await
 /* 
 
 function disp1() {
@@ -2718,17 +2623,17 @@ function disp() {
 }
 
 disp() */
+/* 
+console.log("Start");
+setTimeout(function cbT(){
+ console.log("CB SetTimeout");
+}, 5000 ) ;
 
-// console.log("Start");
-// setTimeout(function cbT(){
-//  console.log("CB SetTimeout");
-// }, 5000 ) ;
-
-// fetch("https://dummyjson.com/products/1")
-// .then(function cbF(){
-//  console.log("CB Netflix");
-// });
-// console.log("End");
+fetch("https://dummyjson.com/products/1")
+.then(function cbF(){
+ console.log("CB Netflix");
+});
+console.log("End"); */
 
 //=======================================================================
 
@@ -2738,24 +2643,20 @@ disp() */
 // normal javascript => synchronous execution => sequencial execution
 // callback functions => asynchronous execution
 
-
 // function Test1() {
 //   setTimeout( function cbF() { console.log('in Test 1 function');},5000);
 // }
-
 
 // function Test2() {
 //   setTimeout(function cbf2() {console.log('in Test 2 function')},7000);
 // }
 
-
 // Test2();
 // Test1();
 
-
-// function singUp(bhushan) {
+// function signUp(bhushan) {
 //   setTimeout(() => {
-//     console.log('in singUp function');
+//     console.log('in signUp function');
 //     bhushan();
 //   },5000);
 // }
@@ -2778,15 +2679,13 @@ disp() */
 //   setTimeout(() => console.log('in Logout function'),4000);
 // }
 
-
-// singUp(function CBF1() {
+// signUp(function CBF1() {
 //   Login(function CBF2() {
 //     SendMail(function CBF3() {
 //       Logout();
 //     });
 //   });
 // });
-
 
 //=======================================================================
 
@@ -2795,11 +2694,10 @@ disp() */
 //2)reject,  => reject
 //3)pending
 
-
-// function singUp() {
+// function SignUp() {
 //   return new Promise((resolve,reject) => {
 //     setTimeout(() => {
-//       console.log('in singUp function');
+//       console.log('in SignUp function');
 //       const aa = Math.random() * 10;
 //       if(aa > 1) {
 //         resolve("Hurreeeyyyyyyyyyyyy");
@@ -2809,7 +2707,7 @@ disp() */
 //     },5000);
 //   })
 //   }
-  
+
 //   function Login() {
 //     return new Promise((resolve,reject) => {
 //     setTimeout(() => {
@@ -2818,7 +2716,7 @@ disp() */
 //     },2000);
 //   });
 //   }
-  
+
 //   function SendMail() {
 //     return new Promise((resolve,reject) => {
 //     setTimeout(() => {
@@ -2827,7 +2725,7 @@ disp() */
 //     },8000);
 //   });
 //   }
-  
+
 //   function Logout() {
 //     return new Promise((resolve,reject) => {
 //     setTimeout(() => {
@@ -2836,33 +2734,28 @@ disp() */
 //     },4000);
 //     });
 //   }
-  
 
-
-// singUp().then(Login).then(SendMail).then(Logout);
-// // singUp()
-// //   .then(data => {
-// //     console.log(data);
-// //     Login().then(res => {
-// //         console.log(res);
-// //         SendMail()
-// //       }).catch(errr => clg)
-// //       .catch(err => {
-// //         console.log(err)});
-// //   })
-// //   .catch(err => console.log(err))
-
-
+// SignUp().then(Login).then(SendMail).then(Logout);
+// signUp()
+//   .then(data => {
+//     console.log(data);
+//     Login().then(res => {
+//         console.log(res);
+//         SendMail()
+//       }).catch(errr => clg)
+//       .catch(err => {
+//         console.log(err)});
+//   })
+//   .catch(err => console.log(err))
 
 //=====================================================================
 
-// Async-await 
+// Async-await
 
-
-// function singUp() {
+// function signUp() {
 //   return new Promise((resolve,reject) => {
 //     setTimeout(() => {
-//       console.log('in singUp function');
+//       console.log('in signUp function');
 //       const aa = Math.random() * 10;
 //       if(aa > 1) {
 //         resolve("Hurreeeyyyyyyyyyyyy");
@@ -2872,7 +2765,7 @@ disp() */
 //     },5000);
 //   })
 //   }
-  
+
 //   function Login() {
 //     return new Promise((resolve,reject) => {
 //     setTimeout(() => {
@@ -2881,7 +2774,7 @@ disp() */
 //     },2000);
 //   });
 //   }
-  
+
 //   function SendMail() {
 //     return new Promise((resolve,reject) => {
 //     setTimeout(() => {
@@ -2890,7 +2783,7 @@ disp() */
 //     },8000);
 //   });
 //   }
-  
+
 //   function Logout() {
 //     return new Promise((resolve,reject) => {
 //     setTimeout(() => {
@@ -2899,16 +2792,15 @@ disp() */
 //     },4000);
 //     });
 //   }
-  
+
 // async function normal() {
-//   await singUp();
+//   await signUp();
 //   await Login();
 //   await SendMail();
 //   await Logout();
 // }
 
 // normal();
-
 
 //=============================================================================================
 
@@ -2919,7 +2811,7 @@ disp() */
 //   setTimeout(() =>{
 //     console.log('Hello from setTimeout');
 //   },2000);
-  
+
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       console.log('From promise');
@@ -2927,7 +2819,7 @@ disp() */
 //     },6000);
 //   })
 //   console.log('hello 2');
- 
+
 // }
 
 // disp().then(res => console.log('result'));
@@ -2937,28 +2829,26 @@ disp() */
 // Promise.all() method: => it always takes all promises in an array format and return final result from all resolved promises values in array format
 // if any promise get reject from that input array then it only shows that output as a rejected string from that respective promise
 
+// const promise1 = new Promise((resolve,reject) => resolve('Hello1'))
+// const promise2 = new Promise((resolve,reject) => resolve('Hello2'))
+// const promise3 = new Promise((resolve,reject) => resolve('Hello3'))
+// const promise4 = new Promise((resolve,reject) => resolve('Hello4'))
 
-/* const promise1 = new Promise((resolve,reject) => resolve('Hello1'))
-const promise2 = new Promise((resolve,reject) => resolve('Hello2'))
-const promise3 = new Promise((resolve,reject) => resolve('Hello3'))
-const promise4 = new Promise((resolve,reject) => resolve('Hello4'))
+// const promise5 = Promise.all([promise1,promise2,promise3,promise4]);
+// promise5.then(res =>console.log('Promise', res ))
+//                 // output : ['Hello1','Hello2','Hello3','Hello4']
+// .catch(err => console.log('error',err));
 
-const promise5 = Promise.all([promise1,promise2,promise3,promise4]);
-promise5.then(res =>console.log('Promise', res ))         
-                // output : ['Hello1','Hello2','Hello3','Hello4']
-.catch(err => console.log('error',err)); */
+// const promise1 = new Promise((resolve, reject) => resolve("Hello1"));
+// const promise2 = new Promise((resolve, reject) => reject("Hello2"));
+// const promise3 = new Promise((resolve, reject) => reject("Hello3"));
+// const promise4 = new Promise((resolve, reject) => resolve("Hello4"));
 
-/* 
-const promise1 = new Promise((resolve,reject) => resolve('Hello1'))
-const promise2 = new Promise((resolve,reject) => reject('Hello2'))
-const promise3 = new Promise((resolve,reject) => reject('Hello3'))
-const promise4 = new Promise((resolve,reject) => resolve('Hello4'))
+// const promise5 = Promise.all([promise1, promise2, promise3, promise4]);
+// promise5
+//   .then((res) => console.log("Promise", res))
+//   .catch((err) => console.log("error", err));
 
-const promise5 = Promise.all([promise1,promise2,promise3,promise4]);
-promise5.then(res =>console.log('Promise', res ))
-.catch(err => console.log('error',err));
-
- */
 //==============================================================================================
 
 // Promise.race() method: => it is similar to Promise.all but instead of giving result as all promises values it only gives result of first resolved/reject promise
@@ -2999,14 +2889,14 @@ promise5.then(res =>console.log('Promise', res ))
 // const promise5 = Promise.allSettled([promise1,promise2,promise3,promise4]);
 // promise5.then(res =>console.log('Promise', res ))
 
-/* const promise1 = new Promise((resolve,reject) => resolve('Hello1'))
-const promise2 = new Promise((resolve,reject) => reject('Hello2'))
-const promise3 = new Promise((resolve,reject) => resolve('Hello3'))
-const promise4 = new Promise((resolve,reject) => reject('Hello4'))
+//  const promise1 = new Promise((resolve,reject) => resolve('Hello1'))
+// const promise2 = new Promise((resolve,reject) => reject('Hello2'))
+// const promise3 = new Promise((resolve,reject) => resolve('Hello3'))
+// const promise4 = new Promise((resolve,reject) => reject('Hello4'))
 
-const promise5 = Promise.allSettled([promise1,promise2,promise3,promise4]);
-promise5.then(res =>console.log('Promise', res.map(data => console.log(data.status,data.value)) ))
- */
+// const promise5 = Promise.allSettled([promise1,promise2,promise3,promise4]);
+// promise5.then(res =>console.log('Promise', res.map(data => console.log(data.status,data.value)) ))
+
 /* const promise1 = new Promise((resolve,reject) => reject('Hello1'))
 const promise2 = new Promise((resolve,reject) => reject('Hello2'))
 const promise3 = new Promise((resolve,reject) => reject('Hello3'))
@@ -3020,7 +2910,6 @@ promise5.then(res =>console.log('Promise', res )) */
 //Promise.any() : => it is like a race but just it waits for the first promise gets resolved
 // if all promises gets rejected then it returns the result as "AggregateError: All promises were rejected"
 
-
 // const promise1 = new Promise((resolve,reject) => reject('Hello1'))
 // const promise2 = new Promise((resolve,reject) => reject('Hello2'))
 // const promise3 = new Promise((resolve,reject) => resolve('Hello3'))
@@ -3029,7 +2918,6 @@ promise5.then(res =>console.log('Promise', res )) */
 // const promise5 = Promise.any([promise1,promise2,promise3,promise4]);
 // promise5.then(res =>console.log('Promise', res ))
 // .catch(err => console.log('error',err));
-
 
 /* 
 const promise1 = new Promise((resolve,reject) => reject('Hello1'))
@@ -3040,8 +2928,6 @@ const promise4 = new Promise((resolve,reject) => reject('Hello4'))
 const promise5 = Promise.any([promise1,promise2,promise3,promise4]);
 promise5.then(res =>console.log('Promise', res ))
 .catch(err => console.log(err));  */
-
-
 
 //=========================================================================
 
@@ -3054,7 +2940,7 @@ promise5.then(res =>console.log('Promise', res ))
 
 // function disp2(){
 //   console.log('hello from disp2');
-  
+
 // }
 
 // disp1(disp2);
@@ -3064,9 +2950,8 @@ promise5.then(res =>console.log('Promise', res ))
 // interview question:
 
 // 1) What is callback hell?
-// Ans: whenever there is a scenario of interdependent task or function and in that situation we write a nested callbacks 
+// Ans: whenever there is a scenario of interdependent task or function and in that situation we write a nested callbacks
 // which leads to a situation known  as callback hell
-
 
 // Promise
 
@@ -3076,16 +2961,13 @@ promise5.then(res =>console.log('Promise', res ))
 // console.log(promiseResult1);
 // promiseResult1.then(res => console.log(res));
 
-
-
 // const promiseResult2 = new Promise(function(resolve, reject) {
 //     reject('The promise has been rejected');
 // })
 // console.log(promiseResult2);
 // promiseResult2.catch(res => console.log(res));
 
-
-//using arrow function 
+//using arrow function
 
 // const promiseResult2 = new Promise((resolve, reject) => {
 //   reject('The promise has been rejected');
@@ -3095,20 +2977,17 @@ promise5.then(res =>console.log('Promise', res ))
 
 //==========================================================================
 
-
-//Async -await 
+//Async -await
 
 // const promiseResult2 = new Promise((resolve, reject) => {
-//   // resolve('The promise has been resolved');
+// resolve('The promise has been resolved');
 //   reject('The promise has been rejected');
 // });
-
-
 
 // async function disp() {
 //   const aa = await promiseResult2;
 //   console.log(aa);
-  
+
 // }
 
 // disp();
@@ -3135,15 +3014,12 @@ promise5.then(res =>console.log('Promise', res ))
 // }
 // generateResult()
 
-
 //================================================================
 
 // const disp1 =() =>{ return new Promise((resolve,reject) =>{ setTimeout(() => resolve('hi1'),2000) } )}
 // const disp2 =() =>{ return new Promise((resolve,reject) =>{ setTimeout(() => resolve('hi2'),5000) } )}
 // const disp3 =() =>{ return new Promise((resolve,reject) =>{ setTimeout(() => resolve('hi3'),1000) } )}
 // const disp4 =() =>{ return new Promise((resolve,reject) =>{ setTimeout(() => resolve('hi4'),7000) } )}
-
-
 
 // async function generateResult() {
 //   const a1 = await disp1();
@@ -3155,16 +3031,14 @@ promise5.then(res =>console.log('Promise', res ))
 //   const a4 = await disp4();
 //   console.log(a4);
 //   console.log(a1+" "+a2+" "+a3+" "+a4);
-  
+
 // }
 
 // generateResult();
 
-
 //================================================================
 
-
-// fetch => we use to send network request , it gives response in the 
+// fetch => we use to send network request , it gives response in the
 // form of response object, which we need to convert first into JSON object
 // then that JSON object we can use for UI purpose
 
@@ -3172,11 +3046,11 @@ promise5.then(res =>console.log('Promise', res ))
 
 // fetch('https://jsonplaceholder.typicode.com/todos/1')
 // .then(res => res.json())    //res also known as response object, so are not able to perform any operation on it
-// .then(data => console.log(data)); 
+// .then(data => console.log(data));
 
 // fetch('https://jsonplaceholder.typicode.com/posts')
 // .then(res => res.json())    //res also known as response object, so are not able to perform any operation on it
-// .then(data => data.map(val => console.log(val.title))); 
+// .then(data => data.map(val => console.log(val.title)));
 
 //================================================================
 //fetch API using async-await
@@ -3185,8 +3059,7 @@ promise5.then(res =>console.log('Promise', res ))
 //   const data  = await fetch('https://jsonplaceholder.typicode.com/todos/1');
 //   const jsonFormatted = await data.json();
 //   console.log(jsonFormatted);
-  
-  
+
 // }
 // disp();
 
@@ -3195,21 +3068,17 @@ promise5.then(res =>console.log('Promise', res ))
 //   console.log(data.headers.get('Content-Type'));
 //   console.log(data.headers.get('via'));
 //   return data.json();
-  
-  
+
 // }
 // disp().then(res => console.log(res));
 
 //================================================================
-
 
 // async function disp() {
 //   return 'Hello';
 // }
 
 // disp().then(res => console.log(res));
-
-
 
 //==================================================
 
@@ -3223,7 +3092,6 @@ promise5.then(res =>console.log('Promise', res ))
 
 // }
 
-
 // disp()();
 
 //======================================================
@@ -3234,7 +3102,6 @@ promise5.then(res =>console.log('Promise', res ))
 //     return this.name;
 //   }
 // };
-
 
 // var name='swift';
 // var getName = car.getName;
@@ -3267,7 +3134,6 @@ promise5.then(res =>console.log('Promise', res ))
 // import a,{b,c} from './b.js'
 // console.log(a,b,c)
 
-
 //================================================================
 
 // Destructuring => elements discloused outside of structure
@@ -3281,7 +3147,6 @@ promise5.then(res =>console.log('Promise', res ))
 // console.log(arr[3]);
 // console.log(arr[4]);
 
-
 // // destructure
 
 // const [a,b,c,d,e] = arr;
@@ -3290,7 +3155,6 @@ promise5.then(res =>console.log('Promise', res ))
 // const [,,,aa,] = arr;
 // console.log(aa);
 // //==================================================================
-
 
 // const newObject ={
 //   name: 'bhushan',
@@ -3301,7 +3165,6 @@ promise5.then(res =>console.log('Promise', res ))
 // console.log(newObject.name);
 // console.log(newObject.lname);
 
-
 // //destructuring
 
 // const {name,lname} = newObject;
@@ -3311,3 +3174,95 @@ promise5.then(res =>console.log('Promise', res ))
 
 // const {name:fname,lname:surname} = newObject;
 // console.log(fname)
+
+// const a= 'tabchoosed=0; index=123';
+
+// console.log(a.slice(a.indexOf('=')+1))
+
+// console.log(a.split('; ').find((row) => row.startsWith('tabchoosed='))?.split('=')[1]);
+
+//================================================================
+// Program for fining out shortest substring
+
+/* Input string1: "this is a test string"
+Input string2: "tist"
+Output string: "t stri" */
+/* 
+Input str1 = 'abcdefgh';
+Input str2 = 'gedcf';
+output string = 'cdefg';
+ */
+// function smalletestSubstring(inp1, inp2) {
+//   console.log(inp1, inp2);
+//   const res1 = inp1.split("");
+//   const res2 = inp2.split("");
+//   // console.log(res2.sort())
+//   let aa = {};
+//   res2.forEach((data,index) => {
+//     aa[data] = new Array();
+//   })
+
+//   console.log(aa);
+//   for (let i = 0; i < res2.length; i++) {
+//     for (let j = 0 + 1; j < res1.length; j++) {
+//       if (res2[i] === res1[j]) {
+//         console.log(res2[i] + "- found at -" + j + " location");
+//         if(aa.hasOwnProperty(res2[i])){
+//           if(!aa[res2[i]].includes(j)) aa[res2[i]].push(j)
+//         }
+//       }
+//     }
+//   }
+//   console.log(Object.values(aa));
+  
+//   Object.values(aa).map((data,i) => {
+//     if(i === 0) {
+//       data.sort((a,b) => a-b);
+//     } else {
+//       data.sort((a,b) => b-a);
+//     }
+//   })
+
+//   const locations = Object.values(aa).map((data,i) => {
+//     if(i !== 0) {
+//       return data[0]
+//     }
+//   } );
+
+//   console.log(locations.sort((a,b) => a-b))
+  
+//   let bb;
+//   console.log(Object.values(aa)[0], locations)
+//   if(locations.length > Object.values(aa)[0] ) {
+//       locations.forEach((dataa, index) => {
+//       if(dataa < Object.values(aa)[0]){
+//         bb = Object.values(aa)[0];
+//       }
+//     })
+//     locations.push(...bb);
+//   } else {
+//     Object.values(aa)[0].forEach((dataa, index) => {
+//       if(dataa < locations[0] ){
+//         bb = dataa;
+//       }
+//     })
+//     locations.push(bb);
+
+//   }
+//   console.log(locations)
+//   const finalRes = locations.sort((a,b) => a-b).filter(data => data)
+//   console.log(finalRes)
+//   console.log(inp1.slice(finalRes[0],finalRes[finalRes.length-1]+1))
+// }
+
+// smalletestSubstring("this is a test string", "tist");
+
+//================================================================
+
+
+async function callAPI () {
+	const res = await fetch("https://jsonplaceholder.typicode.com/posts/1"); 
+    const res1 = await res.json(); 
+   console.log(res1.userId);
+ };
+callAPI();
